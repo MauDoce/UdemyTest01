@@ -1,0 +1,98 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*-----BODY -----*/
+body {
+	background-color: #FFF;
+	font-size: 16px;
+	font-family:Verdana, Arial, sans-serif;	
+	color: #444;
+}
+
+
+/*-----CONTAINER -----*/
+#container {
+	
+	min-width: 320px;
+	max-width: 975px;
+}
+
+/*-----HEADER -----*/
+header {margin: .5em 2%;}
+header img { float: left; margin-right: 4%;}
+header h1 {font-size: 2em; margin-bottom: .5em;}
+header h2 {font-size: 1.1em;}
+
+/*-----HEADER SOCIAL ICONS-----*/
+header ul.social {
+	display:none;
+		
+}
+
+
+/*-----NAVigation -----*/
+nav {}
+nav ul li {}
+nav ul li a {
+	display:block;
+	text-align:center;
+	padding: .5em;
+	background-color:#444;
+	color:#aaa;
+	text-decoration:none;
+	border: 1px solid #000;
+	border-radius:1em;
+	margin: .5em 2%;}
+nav ul li a:hover {
+	background-color:#000;
+	color:#fff;
+}
+
+/*-----CONTENT -----*/
+#content {
+	min-height: 5em;
+	background-color: #FFF;
+}
+#content h1 {
+padding: .7em 2% 0 2%;
+font-size: 2em;	
+}
+#content h2 {
+padding: .5em 2% 0 2%;
+font-size: 1.5em;	
+}
+#content p {
+padding: .4em 2% 0 2%;
+font-size: .9em;	
+}
+
+
+/*----- FOOTER -----*/
+footer {
+	background-color: #333;
+	color:#999;
+	clear: both;
+	text-align: center;
+	padding: 1em;
+	font-size: .7em;
+}
+
+
+
+
+
+
+
+
+
+
+/* CLEAR FIX SOLUTION*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
